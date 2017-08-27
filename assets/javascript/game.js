@@ -5,3 +5,8 @@
 //5. 
 
 var moviesList = ['titanic', 'fight club', 'saving private ryan', 'forrest gump', 'office space', 'the shawshank redemption', 'american beauty', 'mulan', 'armageddon', 'schindlers list', 'pulp fiction', 'goodfellas']
+var randomPick = moviesList[Math.floor(Math.random() * moviesList.length)];
+
+//function randomWord (targetWord) {
+//	targetWord = moviesList[Math.random()*moviesList.length];
+//}ovie
