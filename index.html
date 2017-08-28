@@ -3,9 +3,18 @@
 <head>
 	<title>Hangman Game</title>
 </head>
-<body>
+<body onload="startUp()">
 <script type="text/javascript" src="assets/javascript/game.js"></script>
-<h1>Lets Play Hangman!</h1>
+<h1>Lets Play a 90s Movie Themed Hangman Game!</h1>
+
+<h2>Choose a Letter!</h2>
+<input id ="letter" type="text">
+<input type="button" value="letter" onclick="Letter()">
+
+<p>The 90s movie is:</p>
+<p id="answer"></p>
+<p id="counter"></p>
+<p id="stat"></p>
 
 </body>
 </html>
