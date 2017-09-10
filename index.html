@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hangman Game</title>
+	<title>Hangman</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Slab" rel="stylesheet">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
-<body onload="startUp()">
-<script type="text/javascript" src="assets/javascript/game.js"></script>
-<h1>Lets Play a 90s Movie Themed Hangman Game!</h1>
-
-<h2>Choose a Letter!</h2>
-<input id ="letter" type="text">
-<input type="button" value="letter" onclick="Letter()">
-
-<p>The 90s movie is:</p>
-<p id="answer"></p>
-<p id="counter"></p>
-<p id="stat"></p>
-
-</body>
+<body>
+	<div class="container border rounded center mt-5">
+		<div class="row">
+			<header class="col-md-12 text-center p-4">
+				<h1>Lets Play a 90s Movie Themed Hangman Game!</h1>
+			</header>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+			<img src="assets/images/banner.png" class="img-fluid p-4" id="star-photo">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+				<div class="col-md-12 text-center p-4" id="guess-box">
+					</div>
+				</div>
+				<div class="row">
+					<div id="multi-use-box" class="text-center col-md-12 p-4">
+						Press a key to get started!
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center p-4" id="wins">
+						WINS:
+						<div id="win-number"></div>
+					</div>
+					<div class="col-md-4 text-center p-4" id="losses">
+						LOSSES:
+						<div id="loss-number"></div>
+					</div>
+					<div class="col-md-4 text-center p-4" id="guesses-left">
+						GUESSES REMAINING:
+						<div id="guess-number"></div>
+					</div>
+				</div>
+			</div>
+		</body>
 </html>
